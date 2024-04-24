@@ -25,7 +25,7 @@ return {
 			lspconfig.tsserver.setup { capabilities = capabilities }
 			lspconfig.pyright.setup { capabilities = capabilities }
 			lspconfig.kotlin_language_server.setup { capabilities = capabilities }
-			lspconfig.html.setup { capabilities = capabilities }
+			lspconfig.html.setup { capabilities = capabilities, filetypes = { 'html', 'js', 'jsx', 'tsx' } }
 			vim.keymap.set('n', '<C-k>', vim.lsp.buf.hover, {})
 			vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
 			vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
