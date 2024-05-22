@@ -5,6 +5,7 @@ vim.opt.scrolloff = 10
 vim.g.mapleader = ' '
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.swapfile = false
 
 vim.api.nvim_create_autocmd('LspAttach', {
 	group = vim.api.nvim_create_augroup('lsp', { clear = true }),
